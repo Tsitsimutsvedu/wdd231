@@ -1,0 +1,27 @@
+@media screen and (min-width: 800px) {
+    body{
+        max-width: 100%;
+    }
+    header{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        text-align: center;
+        background-color: var(--backgroundcolor);
+        color: var(--subcolor);
+    }
+    .navigation{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .navigation li{
+        display: block;
+    }
+
+    #menu{
+        display:none;
+    }
+}

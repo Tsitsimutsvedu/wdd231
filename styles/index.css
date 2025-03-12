@@ -1,0 +1,107 @@
+:root{
+    --backgroundcolor: rgba(107, 107, 167, 0.671);
+    --subcolor: rgb(80, 56, 148);
+    --linkcolor: rgb(73, 64, 155);
+}
+
+main{
+    background-color: var(--backgroundcolor);
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card{
+    display: grid
+;
+    grid-template-rows: 1fr 9fr;
+    margin: 10px;
+    border: 2px solid rgb(109, 106, 106);
+}
+.courses .completed {
+    background-color: var(--subcolor);
+    border-color: var(--linkcolor);
+}
+
+.courses figure {
+    background-color: rgb(106, 99, 141);
+    border-style: outset;
+    border-color: rgb(98, 90, 143);
+}
+
+.courses section{
+    column-span: 3;
+}
+.courses {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+}
+.courses h2{
+    grid-column-start: span 3;
+}
+header span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+header{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+    background-color: var(--backgroundcolor);
+    color: var(--subcolor);
+}
+header section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card h1, .card h2, .card h3{
+    background-color: #47476e;
+    color: rgba(110, 112, 112, 0.925);
+    text-align: center;
+    align-content: center;
+    margin:0;
+}
+header section span{
+    width: 100%;
+    text-align: center;
+}
+
+h1, h2, h3{
+    background-color: var(--backgroundcolor);
+    color: var(--subcolor);
+    margin:10px;
+    display: block;
+    font-family: 'graduate';
+    unicode-bidi: isolate;
+}
+
+a{
+    color:var(--linkcolor);
+}
+
+nav a:hover{
+    margin: 20 10%;
+    width: 20px;
+    color: var(--subcolor);
+    background-color: var(--backgroundcolor);
+}
+
+img{
+    max-width: 100%;
+    position: relative;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+}
+
+.spread {
+    grid-column-start: span 2;
+}

@@ -1,0 +1,29 @@
+@media screen and (max-width: 500px) {
+
+
+    section {
+        max-height: 12rem;
+    }
+
+    .grid {
+        display: block;
+    }
+
+    .courses {
+        max-height: 100rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+
+    .courses ul{
+        margin: 0;
+        max-width: 100%;
+        grid-column-start: span 3;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        list-style: none;
+    }
+}

@@ -1,3 +1,8 @@
+const courseList = document.querySelector('#courseList')
+const allLink = document.querySelector('#all')
+const cseLink = document.querySelector('#cse')
+const wddLink = document.querySelector('#wdd')
+
 const courses = [
     {
         subject: 'CSE',
@@ -60,7 +65,7 @@ const courses = [
             'CSS',
             'JavaScript'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -77,3 +82,37 @@ const courses = [
         completed: false
     }
 ]
+function CourseList (array){
+    let cards = ``;
+
+    for (let i = 0; i < array.length; i++) {
+        if (array[i].completed){
+            cards = `${cards}
+            <figure class="completed">
+                <p>${array[i].subject} ${array[i].number}</p>
+            </figure>`
+        } else {
+            cards = `${cards}
+            <figure>
+                <p>${array[i].subject} ${array[i].number}</p>
+            </figure>`
+        }
+    }
+    return cards
+}
+
+courseList.innerHTML = CourseList(courses);
+
+document.addEventListener('DOMContentLoaded', () => {
+    allLink.addEventListener("click", ()=>{
+        courseList.innerHTML = CourseList(courses);
+    })
+
+    cseLink.addEventListener("click", ()=>{
+        courseList.innerHTML = CourseList(courses.filter(courses => courses.subject == 'CSE'));
+    })
+
+    wddLink.addEventListener("click", ()=>{
+        courseList.innerHTML = CourseList(courses.filter(courses => courses.subject == 'WDD'));
+    })
+})
