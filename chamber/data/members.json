@@ -1,0 +1,59 @@
+[
+    {
+      "name": "Tech Solutions",
+      "address": "8 Dewaal Street, Fishoek, Capetown",
+      "phone": "+27-456-7890",
+      "website": "https://techsolutions.com",
+      "image": "memberlogo.jpg",
+      "membershipLevel": 3
+    },
+    {
+      "name": "Green Earth Landscaping",
+      "address": "6 Greenway , Bellveil, Capetown",
+      "phone": "+27-654-3210",
+      "website": "https://greenearth.com",
+      "image": "memberlogo.jpg",
+      "membershipLevel": 2
+    },
+    {
+      "name": "Peak Academy",
+      "address": "89 1st Ave, Steernberg, Capetown",
+      "phone": "+27-123-4567",
+      "website": "https://brightminds.com",
+      "image": "memberlogo.jpg",
+      "membershipLevel": 1
+    },
+    {
+      "name": "Fishoek Pharmacy",
+      "address": "21 Four Way, Witterborm, Capetown",
+      "phone": "+27-555-6666",
+      "website": "https://healthyliving.com",
+      "image": "memberlogo.jpg",
+      "membershipLevel": 2
+    },
+    {
+      "name": "Frank Koch Painters",
+      "address": "654 Sustainable Rd, Newlands, Capetown",
+      "phone": "+27-333-4444",
+      "website": "https://ecobuilders.com",
+      "image": "memberlogo.jpg",
+      "membershipLevel": 3
+    },
+    {
+      "name": "Zone Fitness",
+      "address": "987 Fit Lane, Wynberg, Capetown",
+      "phone": "+27-777-6666",
+      "website": "https://urbanfitness.com",
+      "image": "memberlogo.jpg",
+      "membershipLevel": 1
+    },
+    {
+      "name": "Culinary Centre",
+      "address": "11 Min Road, Diep River Capetown",
+      "phone": "+27-222-3333",
+      "website": "https://culinarydelights.com",
+      "image": "memberlogo.jpg",
+      "membershipLevel": 3
+    }
+  
+  ]

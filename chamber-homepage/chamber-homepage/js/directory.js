@@ -2,56 +2,56 @@
 const members = [
     {
         "name": "Company A",
-        "address": "55 Main St, City, Country",
-        "phone": "+27 006 7890",
+        "address": "123 Main St, City, Country",
+        "phone": "+123 456 7890",
         "website": "https://companya.com",
         "image": "company-a.png",
         "membership": "Gold"
     },
     {
         "name": "Company B",
-        "address": "8 De Waal, City, Country",
-        "phone": "+27 006 7791",
+        "address": "456 Elm St, City, Country",
+        "phone": "+123 456 7891",
         "website": "https://companyb.com",
         "image": "company-b.png",
         "membership": "Silver"
     },
     {
         "name": "Company C",
-        "address": "11 Aviona St, City, Country",
-        "phone": "+27 326 7892",
+        "address": "789 Oak St, City, Country",
+        "phone": "+123 456 7892",
         "website": "https://companyc.com",
         "image": "company-c.png",
         "membership": "Member"
     },
     {
         "name": "Company D",
-        "address": "101 Nyerere St, City, Country",
-        "phone": "+27 750 7893",
+        "address": "101 Pine St, City, Country",
+        "phone": "+123 456 7893",
         "website": "https://companyd.com",
         "image": "company-d.png",
         "membership": "Gold"
     },
     {
         "name": "Company E",
-        "address": "20 Maple St, City, Country",
-        "phone": "+27 456 7894",
+        "address": "202 Maple St, City, Country",
+        "phone": "+123 456 7894",
         "website": "https://companye.com",
         "image": "company-e.png",
         "membership": "Silver"
     },
     {
         "name": "Company F",
-        "address": "33 Caridon St, City, Country",
-        "phone": "+27 456 7895",
+        "address": "303 Cedar St, City, Country",
+        "phone": "+123 456 7895",
         "website": "https://companyf.com",
         "image": "company-f.png",
         "membership": "Member"
     },
     {
         "name": "Company G",
-        "address": "44 Bridge St, City, Country",
-        "phone": "+27 456 7896",
+        "address": "404 Birch St, City, Country",
+        "phone": "+123 456 7896",
         "website": "https://companyg.com",
         "image": "company-g.png",
         "membership": "Gold"
