@@ -1,103 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="FastfoodsGrill Chamber of Commerce Home Page">
-  <meta name="author" content="Tsitsi Mutsvedu">
-  <meta property="og:title" content="Fastfoods Grill Chamber Home">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="images/logo.png">
-  <meta property="og:url" content="https://example.com/index.html">
-  <title>Fastfoods Grill Chamber Home</title>
-  <link rel="stylesheet" href="styles/style.css">
-  <script src="scripts/script.js" defer></script>
-  <link rel="icon" href="images/favicon.ico">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <meta name="author" content="Tsitsi Mutsvedu">
+   <meta name="description" content="This page by Tsitsi Mutsvedu is one of many in the WDD 231 - Web Frontend Development I Course that is intended to teach me intermediate web frontend development skills.">
+
+   <meta property="og:title" content="Capetown Chamber of Commerce Directory">
+   <meta property="og:type" content="website">
+   <meta property="og:url" content="https://tsitsimutsvedu.github.io/wdd231/chamber/directory.html">
+   <meta property="og:image" content="https://tsitsimutsvedu.github.io/wdd231/chamber/images/mountain-frontview.jpg">
+
+   <link rel="stylesheet" href="styles/base.css">
+   <link rel="icon" href="images/favicon.ico">
+   <script src="scripts/index.js" defer></script>
+   <script src="scripts/getdates.js" defer></script>
+   
+   <title>Home - Chamber of Commerce - Capetown</title>
 </head>
 <body>
-  <header class="header">
-    <img src="images/logo.png" alt="Fastfoods Grill Chamber Logo">
-    <nav class="desktop-nav">
-      <a href="index.html" aria-label="Navigate to Home">Home</a>
-      <a href="directory.html" aria-label="Navigate to Directory">Directory</a>
-      <a href="discover.html" aria-label="Navigate to About Us">Discover</a>
-      <a href="join.html" aria-label="Navigate to Contact Us">Join Us</a>
-    </nav>
-    <button class="hamburger" aria-label="Open navigation menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-    <nav class="mobile-nav hidden">
-      <a href="index.html">Home</a>
-      <a href="directory.html">Directory</a>
-      <a href="discover.html">Discover</a>
-      <a href="join.html">Join Us</a>
-    </nav>
-  </header>  
+   <header>
+       <button id="burger-menu"><img src="images/120px-Hamburger_icon_white.svg.png" alt="menu"></button>
+       <section id="title"><img src="images/chamber-of-commerce.webp" alt="self portrait" id="img-commerce-sign"> 
+           <section id="header-title">
+               <h1 id="titleText">Capetown</h1>
+               <h2>Chamber of Commerce</h2>
+           </section>
+       </section>
+       <section>
+           <nav>
+               <a href="./index.html"><h1>Home</h1></a>
+               <a href="./directory.html"><h1>Directory</h1></a>
+               <a href="./join.html"><h1>Join</h1></a>
+               <a href="./discover.html"><h1>Discover</h1></a>
+           </nav>
+       </section>
+       
+   </header>
+   <main>
+        <section id="drop-down"></section>
+        <img id="hero-img" src="images/Table-Mountain.webp" alt="city of Capetown">
+        <a href=""><h4>Join the Chamber of Commerce today!</h4></a>
+        <h1 id="main-title">Home</h1>
 
-  <main>
-    
-    <section class="hero">
-      <div class="hero-content">
-        <h1>Welcome to the Fastfoods Grill Chamber</h1>
-        <p>Join us today and be part of a thriving business community.</p>
-        <a href="join.html" class="hero-button" aria-label="Join the Fastfoods Grill Chamber">JOIN NOW</a>
-      </div>
-    </section>
+        <section id="event-weather-section">
+            <section class="cards" id="events">
+                <h3 id="card-title">Events</h3>
+                
+                <h4>Community Service Day - 7/24</h4>
+                <p>Join by sharing how your business will serve the community on the upcoming event!</p>
+                
+                <h4>Welcome to New Commerce Members - 8/14</h4>
+                <p>Stop by and welcome the new members of the chamber!</p>
 
-    
-    <section class="current-events">
-      <h2>Upcoming Events</h2>
-      <div class="events-container">
-        <div class="event-card">
-          <h3>Networking Night</h3>
-          <p>Date: March 25, 2025</p>
-          <p>Location: Chamber Office</p>
-        </div>
-        <div class="event-card">
-          <h3>Business Workshop</h3>
-          <p>Date: June 10, 2025</p>
-          <p>Location: Online</p>
-        </div>
-        <div class="event-card">
-          <h3>Annual Gala</h3>
-          <p>Date: December 15, 2025</p>
-          <p>Location: Table Mountain Hotel</p>
-        </div>
-      </div>
-    </section>
+            </section>
 
-    
-    <section class="weather">
-      <h2>Current Weather in Capetown</h2>
-      <div id="weather-container">
-        <p id="weather-description">Loading...</p>
-        <p id="temperature">Loading...</p>
-        <h3>3-Day Forecast</h3>
-        <div id="forecast"></div>
-      </div>
-    </section>
+            <section class="cards" id="weather-card">
+                <h4>Weather</h4>
+                <p id="temperature"></p>
+                <img id="weather-icon" src="" alt="">
+                <p id="description"></p>
+                <p id="sunrise"></p>
+                <p id="sunset"></p>
+            </section>
+            <section class="cards" id="forecast-card">
+                <h4>forecast</h4>
+                <p id="day1"></p>
+                <p id="day2"></p>
+                <p id="day3"></p>
+            </section>
+        </section>
 
-    
-     <div  class="content">
-    <section class="spotlights">
-      <h2>Member Spotlights</h2>
-      <div id="spotlight-container" class="list-view"></div>
-    </section>
-  </div>
-  </main>
+        <section id="business-cards">
+        </section>
 
-  <footer class="footer">
-    <div class="contact-info">
-      <p>Contact us at: info@chamber.com</p>
-    </div>
-    <div class="social-icons">
-      <a href="https://www.facebook.com" target="_blank" aria-label="Visit our Facebook page"><i class="fab fa-facebook"></i></a>
-      <a href="https://www.twitter.com" target="_blank" aria-label="Visit our Twitter page"><i class="fab fa-twitter"></i></a>
-      <a href="https://www.instagram.com" target="_blank" aria-label="Visit our Instagram page"><i class="fab fa-instagram"></i></a>
-    </div>
-    <p>&copy; <span id="currentYear"></span> | Last Updated: <span id="lastModified"></span></p>
-  </footer>
+   </main>
+
+   <footer>
+       <section id="footer-sec">
+           <p>
+               &copy;<span id="currentyear"></span>
+               - Tsitsi Mutsvedu - Capetown
+           </p>
+           </section>
+           <p id="lastModified"></p>
+   </footer>
+
 </body>
+
 </html>

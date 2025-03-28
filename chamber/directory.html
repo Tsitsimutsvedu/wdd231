@@ -1,94 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Fastfoods Grill Chamber of Commerce Directory">
-  <meta name="author" content="Tsitsi Mutsvedu">
-  <meta property="og:title" content="Fastfoods Grill Chamber Directory">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="images/logo.png">
-  <meta property="og:url" content="https://example.com/directory.html">
-  <title>Fastfoods Grill Chamber Directory</title>
-  <link rel="stylesheet" href="styles/style.css">
-  <script src="scripts/script.js" defer></script>
-  <link rel="icon" href="images/favicon.ico">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+   <meta name="author" content="Tsitsi Mutsvedu">
+   <meta name="description" content="This page by Tsitsi Mutsvedu is one of many in the WDD 231 - Web Frontend Development I Course that is intended to teach me intermediate web frontend development skills.">
+
+   <meta property="og:title" content="Capetown Chamber of Commerce Directory">
+   <meta property="og:type" content="website">
+   <meta property="og:url" content="https://tsitsimutsvedu.github.io/wdd231/chamber/directory.html">
+   <meta property="og:image" content="https://tsitsimutsvedu.github.io/wdd231/chamber/images/capetown.jpeg">
+
+   <link rel="stylesheet" href="styles/base.css">
+   <link rel="icon" href="images/favicon.ico">
+   <script src="scripts/directory.js" defer></script>
+   <script src="scripts/getdates.js" defer></script>
+   
+   <title>Directory - Chamber of Commerce - Capetown</title>
 </head>
 <body>
-  <header class="header">
-    <img src="images/logo.png" alt="Fastfoods Grill Chamber Logo">
-    <nav class="desktop-nav">
-      <a href="index.html" aria-label="Navigate to Home">Home</a>
-      <a href="directory.html" aria-label="Navigate to Directory">Directory</a>
-      <a href="discover.html" aria-label="Navigate to About Us">Discover</a>
-      <a href="join.html" aria-label="Navigate to Contact Us">Join Us</a>
-    </nav>
-    <button class="hamburger" aria-label="Open navigation menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-    <nav class="mobile-nav hidden">
-      <a href="index.html">Home</a>
-      <a href="directory.html">Directory</a>
-      <a href="discover.html">Discover</a>
-      <a href="join.html">Join Us</a>
-    </nav>
-  </header>  
-  
-  <main>
-    <section class="hero">
-      <div class="hero-content">
-        <h1>Chamber Directory web</h1>
-        <a href="#" class="hero-button" aria-label="Learn more about the Fastfoods Grill Chamber Directory">LEARN MORE</a>
-      </div>
-    </section>
-    <div class="content">
-      <h2>Welcome to the Fastfoods Grill Chamber Directory</h2>
-      <div class="list-view">
-        <div class="member-item">
-      <img src="images/kalkbay_profile.jpg" alt="kalkbay">
-      <div class="member-info">
-        <h3>Atwell Mutsvedu</h3>
-        <p>CEO, Fastfoods Grill Chamber of Commerce</p>
-      </div>
-    </div>
-    <div class="member-item">
-      <img src="images/muzeinberg_profile.jpg" alt="muzeinberg">
-      <div class="member-info">
-        <h3>Admire Magoshe</h3>
-        <p>Director, Fastfoods Grill Chamber of Commerce</p>
-      </div>
-    </div>
-    <div class="member-item">
-      <img src="images/simontim_profile.jpg" alt="simon tim">
-      <div class="member-info">
-        <h3>Simon Tim</h3>
-        <p>Member, Fastfoods Grill Chamber of Commerce</p>
-      </div>
-    </div>
-  </div> 
-      <button id="toggleView" aria-label="Toggle between list and grid view">TOGGLE VIEW</button>
-    
-      <div id="memberContainer" class="list-view">
-      </div> 
-      
-      
-      </div>
-    </div>
-    
-    <footer class="footer">
-      <div class="contact-info">
-        <p>Contact us at: info@fastfoodsgrillchamber.com</p>
-      </div>
-      <div class="social-icons">
-        <a href="https://www.facebook.com" target="_blank" aria-label="Visit our Facebook page"><i class="fab fa-facebook"></i></a>
-        <a href="https://www.twitter.com" target="_blank" aria-label="Visit our Twitter page"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.instagram.com" target="_blank" aria-label="Visit our Instagram page"><i class="fab fa-instagram"></i></a>
-      </div>
-      <p>&copy; <span id="current-year"></span> | Last Updated: <span id="lastModified"></span></p>
-    </footer>
-</body>
-</html>
+   <header>
+       <button id="burger-menu"><img src="images/120px-Hamburger_icon_white.svg.png" alt="menu"></button>
+       <section id="title"><img src="images/c-of-commerce-sign.jpg" alt="self portrait" id="img-commerce-sign"> 
+           <section id="header-title">
+               <h1 id="titleText">Capetown</h1>
+               <h4>Chamber of Commerce</h4>
+           </section>
+       </section>
+       <section>
+           <nav>
+               <a href="../index.html"><h1>Home</h1></a>
+               <a href="./directory.html"><h1>Directory</h1></a>
+               <a href="./join.html"><h1>Join</h1></a>
+               <a href="./discover.html"><h1>Discover</h1></a>
+           </nav>
+       </section>
+       
+   </header>
+   <main>
+       <section id="drop-down"></section>
+       <img id="hero-img" src="images/capetown-hero.jpeg" alt="city of capetown">
+       <section id="directory-header">
+           <h1 id="main-title">Directory</h1>
+           <section id="filter-menu">
+               <h4>View:</h4>
+               <button id="list">list</button>
+               <button id="block">block</button>
+               <section id="member-block"></section>
+               <section id="member-list"></section>
+           </section>
+       </section>
 
+   </main>
+   <footer>
+       <section id="footer-sec">
+           <p>
+               &copy;<span id="currentyear"></span>
+               - Tsitsi Mutsvedu - Capetown
+           </p>
+           </section>
+           <p id="lastModified"></p>
+   </footer>
+
+</body>
+
+</html>

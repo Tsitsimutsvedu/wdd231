@@ -1,163 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Join the Fastfoods Grill Chamber of Commerce">
-  <meta name="author" content="Tsitsi Mutsvedu">
-  <meta property="og:title" content="Join the Fastfoods Grill Chamber">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="images/logo.png">
-  <meta property="og:url" content="https://example.com/join.html">
-  <title>Join the Fastfoods Grill Chamber</title>
-  <link rel="stylesheet" href="styles/style.css">
-  <script src="scripts/script.js" defer></script>
-  <link rel="icon" href="images/favicon.ico">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <meta name="author" content="Tsitsi Mutsvedu">
+   <meta name="description" content="This page by Tsitsi Mutsvedu is one of many in the WDD 231 - Web Frontend Development I Course that is intended to teach me intermediate web frontend development skills.">
+
+   <meta property="og:title" content="Tsitsi Mutsvedu Chamber of Commerce Directory">
+   <meta property="og:type" content="website">
+   <meta property="og:url" content="https://tsitsimutsvedu.github.io/wdd231/chamber/directory.html">
+   <meta property="og:image" content="https://tsitsimutsvedu.github.io/wdd231/chamber/images/atlanta-hero-2.jpg">
+
+   <link rel="stylesheet" href="styles/base.css">
+   <link rel="icon" href="images/favicon.ico">
+   <script src="scripts/join.js" defer></script>
+   <script src="scripts/getdates.js" defer></script>
+   
+   <title>Join - Chamber of Commerce - Capetown</title>
 </head>
 <body>
-  <header class="header">
-    <img src="images/logo.png" alt="Fastfoods Grill Chamber Logo">
-    <nav class="desktop-nav">
-      <a href="index.html" aria-label="Navigate to Home">Home</a>
-      <a href="directory.html" aria-label="Navigate to Directory">Directory</a>
-      <a href="discover.html" aria-label="Navigate to About Us">Discover</a>
-      <a href="join.html" aria-label="Navigate to Contact Us">Join Us</a>
-    </nav>
-    <button class="hamburger" aria-label="Open navigation menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-    <nav class="mobile-nav hidden">
-      <a href="index.html">Home</a>
-      <a href="directory.html">Directory</a>
-      <a href="discover.html">Discover</a>
-      <a href="join.html">Join Us</a>
-    </nav>
-  </header>  
+   <header>
+       <button id="burger-menu"><img src="images/120px-Hamburger_icon_white.svg.png" alt="menu">Learn More</button>
+       <section id="title"><img src="images/c-of-commerce-sign.webp" alt="self portrait" id="img-commerce-sign"> 
+           <section id="header-title">
+               <h1 id="titleText">Capetown</h1>
+               <h2>Chamber of Commerce</h2>
+           </section>
+       </section>
+       <section>
+           <nav>
+               <a href="./index.html"><h1>Home</h1></a>
+               <a href="./directory.html"><h1>Directory</h1></a>
+               <a href="./join.html"><h1>Join</h1></a>
+               <a href="./discover.html"><h1>Discover</h1></a>
+           </nav>
+       </section>
+       
+   </header>
+   <main>
+        <section id="drop-down"></section>
+        <img id="hero-img" src="images/capetown-hero-2.webp" alt="City of Capetown">
+        <h1 id="main-title">Join</h1>
 
-  <main>
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="hero-content">
-        <h1>Join the Fastfoods Grill Chamber</h1>
-        <p>Complete the form below to apply for membership and be a part of our thriving business community.</p>
-      </div>
-    </section>
+        <section id="main-grid">
+            <form id="form-grid" action="thankyou.html" method="get">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required autocomplete="given-name" title="Enter your first name">
+            
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required autocomplete="family-name" title="Enter your last name">
+            
+                <label for="orgTitle">Organizational Title:</label>
+                <input type="text" id="orgTitle" name="orgTitle" pattern="[a-zA-Z\s-]{7,}" title="Enter your organizational title (min 7 characters, hyphens and spaces allowed)" autocomplete="organization-title">
+            
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required autocomplete="email" title="Enter your email address" placeholder="example@example.com">
+            
+                <label for="mobile">Mobile Phone:</label>
+                <input type="tel" id="mobile" name="mobile" required autocomplete="tel" title="Enter your mobile phone number">
+            
+                <label for="orgName">Business/Organization Name:</label>
+                <input type="text" id="orgName" name="orgName" required autocomplete="organization" title="Enter your business/organization name">
+            
+                <label for="membershipLevel">Membership Level:</label>
+                <select id="membershipLevel" name="membershipLevel" required>
+                <option value="">Select a membership level</option>
+                <option value="level1">Level 1</option>
+                <option value="level2">Level 2</option>
+                <option value="level3">Level 3</option>
+                <option value="level4">Level 4</option>
+                </select>
 
-    <!-- Membership Application Form -->
-    <section class="membership-form">
-      <h2>Membership Application</h2>
-      <form method="get" action="thankyou.html">
-        <div>
-          <label for="first-name">First Name</label>
-          <input type="text" id="first-name" name="first-name" required autocomplete="given-name" title="Your first name">
-        </div>
-        <div>
-          <label for="last-name">Last Name</label>
-          <input type="text" id="last-name" name="last-name" required autocomplete="family-name" title="Your last name">
-        </div>
-        <div>
-          <label for="org-title">Organizational Title</label>
-          <input type="text" id="org-title" name="org-title" required pattern="[A-Za-z\s\-]{7,}" title="Minimum 7 characters, only letters, spaces, and hyphens">
-        </div>
-        <div>
-          <label for="email">Email Address</label>
-          <input type="email" id="email" name="email" required autocomplete="email" title="Your email address" placeholder="example@email.com">
-        </div>
-        <div>
-          <label for="phone">Mobile Phone</label>
-          <input type="tel" id="phone" name="phone" required autocomplete="tel" title="Your mobile phone number">
-        </div>
-        <div>
-          <label for="business-name">Business/Organization Name</label>
-          <input type="text" id="business-name" name="business-name" required autocomplete="organization" title="Name of your business or organization">
-        </div>
-        <div>
-          <label for="membership-level">Membership Level</label>
-          <select id="membership-level" name="membership-level">
-            <option value="NP">NP Membership (Non-Profit) - Free</option>
-            <option value="Bronze">Bronze Membership</option>
-            <option value="Silver">Silver Membership</option>
-            <option value="Gold">Gold Membership</option>
-          </select>
-        </div>
-        <div>
-          <label for="business-description">Business/Organization Description</label>
-          <textarea id="business-description" name="business-description" required title="Describe your business or organization"></textarea>
-        </div>
-        <input type="hidden" name="timestamp" id="timestamp" value=""/>
-        <div>
-          <input type="submit" value="Submit Application">
-        </div>
-      </form>
-    </section>
+                <label for="description">Business/Organization Description:</label>
+                <textarea name="description" id="description" rows="3" maxlength="850"></textarea>
 
-    <!-- Membership Level Cards -->
-    <section class="membership-cards">
-      <div class="card" id="np-card">
-        <h3>NP Membership</h3>
-        <p>Non-profit organizations, free membership</p>
-        <button data-bs-toggle="modal" data-bs-target="#np-modal">Learn More</button>
-      </div>
-      <div class="card" id="bronze-card">
-        <h3>Bronze Membership</h3>
-        <p>Basic membership with essential benefits</p>
-        <button data-bs-toggle="modal" data-bs-target="#bronze-modal">Learn More</button>
-      </div>
-      <div class="card" id="silver-card">
-        <h3>Silver Membership</h3>
-        <p>Advanced benefits with some premium perks</p>
-        <button data-bs-toggle="modal" data-bs-target="#silver-modal">Learn More</button>
-      </div>
-      <div class="card" id="gold-card">
-        <h3>Gold Membership</h3>
-        <p>All-inclusive membership with maximum benefits</p>
-        <button data-bs-toggle="modal" data-bs-target="#gold-modal">Learn More</button>
-      </div>
-    </section>
+                <input type="hidden" id="timestamp" name="timestamp" value="" />
 
-    <div class="modal" id="np-modal">
-      <div class="modal-content">
-        <h4>NP Membership Benefits</h4>
-        <p>Free membership for non-profit organizations, with access to our networking events and some promotional opportunities.</p>
-        <button class="close-modal">Close</button>
-      </div>
-    </div>
-    <div class="modal" id="bronze-modal">
-      <div class="modal-content">
-        <h4>Bronze Membership Benefits</h4>
-        <p>Basic membership that includes networking events and online promotions.</p>
-        <button class="close-modal">Close</button>
-      </div>
-    </div>
-    <div class="modal" id="silver-modal">
-      <div class="modal-content">
-        <h4>Silver Membership Benefits</h4>
-        <p>Additional benefits such as event discounts and featured spots on our website.</p>
-        <button class="close-modal">Close</button>
-      </div>
-    </div>
-    <div class="modal" id="gold-modal">
-      <div class="modal-content">
-        <h4>Gold Membership Benefits</h4>
-        <p>Full access to all events, marketing opportunities, and a premium listing on our site.</p>
-        <button class="close-modal">Close</button>
-      </div>
-    </div>
-  </main>
+            
+                <button type="submit" id="submit">Join</button>
+            </form>
 
-  <footer class="footer">
-    <div class="contact-info">
-      <p>Contact us at: info@fastfoodsgrillchamber.com</p>
-    </div>
-    <div class="social-icons">
-      <a href="https://www.facebook.com" target="_blank" aria-label="Visit our Facebook page"><i class="fab fa-facebook"></i></a>
-      <a href="https://www.twitter.com" target="_blank" aria-label="Visit our Twitter page"><i class="fab fa-twitter"></i></a>
-      <a href="https://www.instagram.com" target="_blank" aria-label="Visit our Instagram page"><i class="fab fa-instagram"></i></a>
-    </div>
-    <p>&copy; <span id="currentYear"></span> | Last Updated: <span id="lastModified"></span></p>
-  </footer>
+            <!-- membership cards containing the buttons that open the dialog description of each membership level. Dialog contains membership level and one sentence description, then a button to close the dialog -->
+            <section id="membership-cards">
+                <section class="membership-levels">
+                    <h2> Non Profit Membership</h2>
+                    <button id="learn-more-non-profit">Learn More</button>
+
+                </section>
+                <dialog id="non-profit-dialog">
+                    <h2>Non Profit Membership</h2>
+                    <p>Non Profit Membership are generally for organizations that are 501(c)(3) or 501(c)(6) organizations.
+                    </p>
+                    <button id="close-non-profit">Close</button>
+                </dialog>
+
+                <section class="membership-levels">
+                    <h2> Bronze Membership</h2>
+                    <button id="learn-more-bronze">Learn More</button>
+
+                </section>
+                <dialog id="bronze-dialog">
+                    <h2>Bronze Membership</h2>
+                    <p>Bronze Membership are generally for small business and organizations of an especially specific focus</p>
+                    <button id="close-bronze">Close</button>
+                </dialog>
+
+                <section class="membership-levels">
+                    <h2> Silver Membership</h2>
+                    <button id="learn-more-silver">Learn More</button>
+
+                </section>
+                <dialog id="silver-dialog">
+                    <h2>Silver Membership</h2>
+                    <p>Silver Membership are any business or organization up to a medium size and any focus seeking a little more publicity in the chamber of commerce.</p>
+                    <button id="close-silver">Close</button>
+                </dialog>
+                    
+
+
+                <section class="membership-levels">
+                    <h2> Gold Membership</h2>
+                    <button id="learn-more-gold">Learn More</button>
+
+                </section>
+                <dialog id="gold-dialog">
+                    <h2>Gold Membership</h2>
+                    <p>Silver Membership is especially for large, long-time established, and highly supporting members of the Chamber of Commerce.</p>
+                    <button id="close-gold">Close</button>
+                </dialog>
+
+            </section>
+        </section>
+
+   </main>
+
+   <footer>
+       <section id="footer-sec">
+           <p>
+               &copy;<span id="currentyear"></span>
+               - Tsitsi Mutsvedu - Capetown
+           </p>
+           </section>
+           <p id="lastModified"></p>
+   </footer>
 
 </body>
+
 </html>
