@@ -1,68 +1,259 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Capetown - Chamber of Commerce">
-  <meta name="author" content="Tsitsi Mutsvedu">
-  <meta property="og:title" content="Discover Chamber of Commerce">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="images/table-mountain.jpeg">
-  <meta property="og:url" content="https://example.com/discover.html">
-  <title>Capetown Chamber of Commerce</title>
-  <link rel="stylesheet" href="styles/style.css">
-  <link rel="stylesheet" href="styles/medium.css">
-  <link rel="stylesheet" href="styles/large.css">
-  <script src="scripts/script.js" defer></script>
-  <script src="scripts/discover.js" defer></script>
-  <link rel="icon" href="images/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tsitsi Mutsvedu">
+    <meta name="description" content="Capetown Chamber of Commerce. We have 
+    the vision to build a community where businesses can thrive, foster a community of growth, 
+    and contribute to economic development. A place for businesses to connect together.">
+
+    <meta property="og:title" content="Capetown Chamber of Commerce">
+    <meta property="og:description" content="Capetown Chamber of Commerce connecting businesses together">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://tsitsimutsvedu.github.io/wdd231/chamber/images/homepage-photo.jpeg">
+    <meta property="og:url" content="https://tsitsimutsvedu.github.io/wdd231/chamber/index.html">
+    <meta name="twitter:card" content="Capetown Chamber of Commerce connects and grows businesses.">
+    <title>Discovery | Capetown Chambers of Commerce </title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+    <link rel="manifest" href="images/icons/site.webmanifest">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css" media="screen">
+    <link rel="stylesheet" href="styles/discovery.css" media="screen">
+    <link rel="stylesheet" href="styles/directory.css" media="screen">
+    <link rel="stylesheet" href="styles/directory-large.css" media="screen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
+    <script src="scripts/discovery.js" defer></script>
+    <script src="scripts/lastmodified.js" defer></script>
+    <script src="scripts/nav.js" defer></script>
 </head>
+
 <body>
-    <header class="header">
-        <img src="images/table-mountain.jpeg" alt="Chamber of Commerce">
-        <nav class="desktop-nav">
-          <a href="index.html" aria-label="Navigate to Home">Home</a>
-          <a href="directory.html" aria-label="Navigate to Directory">Directory</a>
-          <a href="discover.html" aria-label="Navigate to About Us">Discover</a>
-          <a href="join.html" aria-label="Navigate to Contact Us">Join Us</a>
+
+    <header id="greeting-msg"></header>
+
+    <header class="top-banner">
+
+        <nav class="items-left">
+            <ul>
+                <li> <i class="fa-brands fa-facebook"></i> </li>
+                <li> <i class="fa-brands fa-twitter"></i> </li>
+                <li> <i class="fa-brands fa-linkedin"></i> </li>
+                <li> (+27) 64 298 9472 </li>
+            </ul>
         </nav>
-        <button class="hamburger" aria-label="Open navigation menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <nav class="mobile-nav hidden">
-          <a href="index.html">Home</a>
-          <a href="directory.html">Directory</a>
-          <a href="discover.html">Discover</a>
-          <a href="join.html">Join Us</a>
+
+        <nav class="items-right">
+            <ul>
+                <li> <a href="#">Contact Us</a> </li>
+                <li> <a href="#">Privacy Policy</a> </li>
+            </ul>
         </nav>
-      </header>  
 
-  <main>
-    <div class="content">
-    <aside class="sidebar">
-      <div id="last-visit-message"></div>
-    </aside>
+    </header>
 
-    <section class="discover">
-      <h2>Discover Chamber of Commerce</h2>
-      <div class="cards-container">
-      </div>
-    </section>
-</div>
-  </main>
 
-  <footer class="footer">
-    <div class="contact-info">
-      <p>Contact us at: info@chamberofcommerce.com</p>
-    </div>
-    <div class="social-icons">
-      <a href="https://www.facebook.com" target="_blank" aria-label="Visit our Facebook page"><i class="fab fa-facebook"></i></a>
-      <a href="https://www.twitter.com" target="_blank" aria-label="Visit our Twitter page"><i class="fab fa-twitter"></i></a>
-      <a href="https://www.instagram.com" target="_blank" aria.label="Visit our Instagram page"><i class="fab fa-instagram"></i></a>
-    </div>
-    <p>&copy; <span id="currentYear"></span> | Last Updated: <span id="lastModified"></span></p>
-  </footer>
+    <header>
+
+        <div class="nav-container">
+            <span>
+                <a href="index.html"> 
+                    <img src="images/acc_logo.svg" alt="Capetown Chambers of Commerce logo">
+                </a>
+
+                <span id="icon-menu"> </span>
+            </span>
+
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="discover.html" class="active">Discover</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    
+    <main>
+        <div id="discover-container">
+
+            <div class="att-1">
+                <div class="Events">
+                    <h1>Special Events</h1>
+                    <ul>
+                        <li>Business Diversity Conference | 24th November 2025, 4pm</li>
+                        <li>Business Excellence Award Event | 3rd December 2025, 2pm</li>
+                        <li>Professional Development Seminar | 16th December 2025, 1pm</li>
+                    </ul>
+
+                </div>
+
+                <div id="calendar-section">
+
+                    <div class="calendar-header">
+                        <button id="prev-month">&#9664;</button>
+                        <span id="month-year"></span>
+                        <button id="next-month">&#9654;</button>
+                    </div>
+
+                    <div class="calendar">
+                        <!-- Day names -->
+                        <div class="day-names">
+                            <div>Sun</div>
+                            <div>Mon</div>
+                            <div>Tue</div>
+                            <div>Wed</div>
+                            <div>Thu</div>
+                            <div>Fri</div> 
+                            <div>Sat</div>
+                        </div>
+                        <!-- Days will be dynamically populated -->
+                        <div class="days" id="days"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="att-2">
+                <div class="places">
+                    <div class="att-img-container">
+                        <img src="images/mountain-frontview.jpg" alt="National Monument Capetown" loading="lazy" width="1200" height="800">
+
+                        <div class="ptag">
+                            <p> <strong> Capetown Table Mountain </strong> 
+                            <br>Table Mountain is one of Cape Town's most iconic landmarks and a must-visit destination. This flat-topped mountain rises about 1,086 meters above sea level and offers breathtaking views.</p>
+                            <p>104 Main Street capetown</p> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="places">
+                    <div class="att-img-container">
+                        <img src="images/craft-market.webp" alt="Arts and Craft Village capetown" loading="lazy" width="800" height="445">
+                        <div class="ptag">
+                            <p><strong>Arts and Crafts Village </strong> 
+                            <br> Cape Town is a hub for arts and crafts, offering a variety of markets where you can explore local creativity.</p>
+                            <p>57A Sea Point Capetown</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="places">
+                    <div class="att-img-container">
+                        <img src="images/muzeinberg-beach.webp" alt="muzeinberg beach capetown" loading="lazy" width="800" height="445">
+                        <div class="ptag">
+                            <p><strong>Muzeinberg Beach </strong> 
+                            <br> Muizenberg Beach is a popular spot in Cape Town, South Africa, known for its vibrant atmosphere and excellent surfing conditions. Located on the False Bay coast, it features colorful beach huts and a long stretch of sandy shoreline. The beach is also home to the famous "Surfer's Corner," which attracts surfers from all over.</p>
+                            <p>5 Main Road, Muzeinberg Capetown</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="places">
+                    <div class="att-img-container">
+                        <img src="images/kirstenbosch-gardens.webp" alt="kirstenbosch Gardens capetown" loading="lazy" width="800" height="445">
+                        <div class="ptag">
+                            <p><strong>kirstenboschGardens </strong> 
+                            <br> Kirstenbosch National Botanical Garden is a stunning botanical garden located on the eastern slopes of Table Mountain in Cape Town. It's internationally acclaimed as one of the most magnificent botanical gardens in the world. The garden spans 528 hectares and includes both cultivated gardens and a nature reserve</p>
+                            <p>Rhodes Drive,  Capetown</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="places">
+                    <div class="att-img-container">
+                        <img src="images/Lake-capetown.jpeg" alt="Lake Michelle Capetown" loading="lazy" width="602" height="510">
+                        <div class="ptag">
+                            <p> <strong> Lake Michelle</strong> 
+                            <br> Cape Town is surrounded by stunning natural beauty, including some serene lakes and reservoirs. 
+                                 Lake Michelle: Located in Noordhoek, this tranquil lake is part of a secure residential estate. It's perfect for peaceful walks and enjoying the scenery</p>
+                            <p>5th Cresent Noordhoek, Fishoek</p>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="places">
+                    <div class="att-img-container">
+                        <img src="images/Robben Island.jpeg" alt="Robben Island" loading="lazy" width="1024" height="683">
+                        <div class="ptag">
+                            <p> <strong> Robben Island</strong> <br> Robben Island is a UNESCO World Heritage Site located in Table Bay, about 11 kilometers from Cape Town. It has a rich and complex history, most notably as a prison during apartheid, where Nelson Mandela and other political prisoners were held.</p>
+                            <p>1 Atlantic Ocean, Capetown</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="places">
+                    <div class="att-img-container">
+                        <img src="images/cape-point.jpeg" alt="Cape Point" loading="lazy" width="1600" height="900">
+                        <div class="ptag">
+                            <p> <strong> Cape Point </strong> <br> Cape Point is a breathtaking destination located at the southern tip of the Cape Peninsula in South Africa. It's part of the Table Mountain National Park and offers stunning views of the ocean, rugged cliffs, and unique flora and fauna.</p>
+                        <p>156 Main Road, Capetown</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="places">
+                    <div class="att-img-container">
+                        <img src="images/penguins.webp" alt="Simons Town Penguins" loading="lazy" width="1600" height="1197">
+                        <div class="ptag">
+                            <p> <strong>Penguins</strong> <br> Simon's Town is home to the famous Boulders Beach Penguin Colony, where you can see African penguins in their natural habitat. These adorable creatures, also known as "Jackass Penguins" due to their braying call, are an endangered species. The colony is protected, and visitors can observe the penguins from wooden walkways without disturbing them</p>
+                        <p>204 Main Road, Simon's Town, Capetown</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-background">
+
+            <div class="footer-container">
+                <div class="sec-one">
+                    <p>Capetown Chamber of Commerce <br>
+                        No 3 Galadima Close, Garki <br>
+                        Capetown <br>
+                        <a href="#">info@capetown.org</a><br>
+                        (+27) 64 362 0785
+                    </p>
+                </div>
+
+                <div class="sec-two">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+
+                <div class="sec-three">
+                    <p>WDD231 Web Development 1 Project
+                        <br>Brigham Young University - Idaho
+                        <br>Tsitsi Mutsvedu
+                    </p>
+                    <p id="lastModified"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footend-container">
+            <div class="footer-end">
+                <p><span id="currentYear">©</span> Capetown Chamber of Commerce | All rights reserved</p>
+                <p>Designed by Tsitsi Mutsvedu</p>
+            </div>
+        </div>
+
+    </footer>
 </body>
+
 </html>
