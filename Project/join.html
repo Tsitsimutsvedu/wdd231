@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <meta name="author" content="Tsitsi Mutsvedu">
+   <meta name="description" content="This page by Tsitsi Mutsvedu is one of many in the WDD 231 - Web Frontend Development I Course that is intended to teach me intermediate web frontend development skills.">
+
+   <meta property="og:title" content="Tsitsi Mutsvedu Ocean Conservation and Marine Life in South Africa">
+   <meta property="og:type" content="website">
+   <meta property="og:url" content="https://tsitsimutsvedu.github.io/wdd231/chamber/directory.html">
+   <meta property="og:image" content="https://tsitsimutsvedu.github.io/wdd231/chamber/images/atlanta-hero-2.jpg">
+
+   <link rel="stylesheet" href="styles/base.css">
+   <link rel="icon" href="images/favicon.ico">
+   <script src="scripts/join.js" defer></script>
+   <script src="scripts/getdates.js" defer></script>
+   
+   <title>Join - Ocean Conservation and Marine Life in South Africa</title>
+</head>
+<body>
+   <header>
+       <button id="burger-menu"><img src="images/120px-Hamburger_icon_white.svg.png" alt="menu">Learn More</button>
+       <section id="title"><img src="images/chamber-of-commerce-sign.webp" alt="self portrait" id="img-commerce-sign"> 
+           <section id="header-title">
+               <h1 id="titleText">South Africa</h1>
+               
+               <h2>Ocean Conservation and Marine Life in South Africa</h2>
+           </section>
+       </section>
+       <section>
+           <nav>
+               <a href="./index.html"><h1>Home</h1></a>
+               <a href="./directory.html"><h1>Directory</h1></a>
+               <a href="./join.html"><h1>Join</h1></a>
+               <a href="./discover.html"><h1>Discover</h1></a>
+           </nav>
+       </section>
+       
+   </header>
+   <main>
+        <section id="drop-down"></section>
+        <img id="hero-img" src="images/ocean-hero.webp" alt="City of Capetown">
+        <h1 id="main-title">Join</h1>
+
+        <section id="main-grid">
+            <form id="form-grid" action="thankyou.html" method="get">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required autocomplete="given-name" title="Enter your first name">
+            
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required autocomplete="family-name" title="Enter your last name">
+            
+                <label for="orgTitle">Organizational Title:</label>
+                <input type="text" id="orgTitle" name="orgTitle" pattern="[a-zA-Z\s-]{7,}" title="Enter your organizational title (min 7 characters, hyphens and spaces allowed)" autocomplete="organization-title">
+            
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required autocomplete="email" title="Enter your email address" placeholder="example@example.com">
+            
+                <label for="mobile">Mobile Phone:</label>
+                <input type="tel" id="mobile" name="mobile" required autocomplete="tel" title="Enter your mobile phone number">
+            
+                <label for="orgName">Business/Organization Name:</label>
+                <input type="text" id="orgName" name="orgName" required autocomplete="organization" title="Enter your business/organization name">
+            
+                <label for="membershipLevel">Membership Level:</label>
+                <select id="membershipLevel" name="membershipLevel" required>
+                <option value="">Select a membership level</option>
+                <option value="level1">Level 1</option>
+                <option value="level2">Level 2</option>
+                <option value="level3">Level 3</option>
+                <option value="level4">Level 4</option>
+                </select>
+
+                <label for="description">Business/Organization Description:</label>
+                <textarea name="description" id="description" rows="3" maxlength="850"></textarea>
+
+                <input type="hidden" id="timestamp" name="timestamp" value="" />
+
+            
+                <button type="submit" id="submit">Join</button>
+            </form>
+
+            <!-- membership cards containing the buttons that open the dialog description of each membership level. Dialog contains membership level and one sentence description, then a button to close the dialog -->
+            <section id="membership-cards">
+                <section class="membership-levels">
+                    <h2> Non Profit Membership</h2>
+                    <button id="learn-more-non-profit">Learn More</button>
+
+                </section>
+                <dialog id="non-profit-dialog">
+                    <h2>Non Profit Membership</h2>
+                    <p>Non Profit Membership are generally for organizations that are 501(c)(3) or 501(c)(6) organizations.
+                    </p>
+                    <button id="close-non-profit">Close</button>
+                </dialog>
+
+                <section class="membership-levels">
+                    <h2> Bronze Membership</h2>
+                    <button id="learn-more-bronze">Learn More</button>
+
+                </section>
+                <dialog id="bronze-dialog">
+                    <h2>Bronze Membership</h2>
+                    <p>Bronze Membership are generally for small business and organizations of an especially specific focus</p>
+                    <button id="close-bronze">Close</button>
+                </dialog>
+
+                <section class="membership-levels">
+                    <h2> Silver Membership</h2>
+                    <button id="learn-more-silver">Learn More</button>
+
+                </section>
+                <dialog id="silver-dialog">
+                    <h2>Silver Membership</h2>
+                    <p>Silver Membership are any business or organization up to a medium size and any focus seeking a little more publicity in the chamber of commerce.</p>
+                    <button id="close-silver">Close</button>
+                </dialog>
+                    
+
+
+                <section class="membership-levels">
+                    <h2> Gold Membership</h2>
+                    <button id="learn-more-gold">Learn More</button>
+
+                </section>
+                <dialog id="gold-dialog">
+                    <h2>Gold Membership</h2>
+                    <p>Silver Membership is especially for large, long-time established, and highly supporting members of the Chamber of Commerce.</p>
+                    <button id="close-gold">Close</button>
+                </dialog>
+
+            </section>
+        </section>
+
+   </main>
+
+   <footer>
+       <section id="footer-sec">
+           <p>
+               &copy;<span id="currentyear"></span>
+               - Tsitsi Mutsvedu - Capetown
+           </p>
+           </section>
+           <p id="lastModified"></p>
+   </footer>
+
+</body>
+
+</html>

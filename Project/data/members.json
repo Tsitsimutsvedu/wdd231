@@ -1,0 +1,58 @@
+[
+    {
+      "name": "Mailchimp",
+      "address": "675 Simon Mazorodze Drive, Capetown, South Africa",
+      "phone": "+27 999 0145",
+      "website": "https://mailchimp.com",
+      "image": "https://eep.io/images/yzco4xsimv0y/73ZAoe8O3Y7SXQLeCNTq5u/8ddf1f63b4abdf7f67149d3a9d74a0bd/MCP.svg?w=260&q=70",
+      "membershipLevel": 3
+    },
+    {
+      "name": "FullStory",
+      "address": "1745 Peachtree St Capetown",
+      "phone": "+27 975 0472",
+      "website": "https://fullstory.com",
+      "image": "https://images.ctfassets.net/dkgr2j75jrom/45e3s3XnQbagjuyWFsu5xT/b7eb05d8975598efa26ff279cc8604cc/integrations-raster-version__2_.svg",
+      "membershipLevel": 2
+    },
+    {
+      "name": "Convoy",
+      "address": "715 Peachtree St Capetown",
+      "phone": "+27 231 9850",
+      "website": "https://convoy.com",
+      "image": "https://convoy.com/wp-content/uploads/2021/12/fill.svg",
+      "membershipLevel": 1
+    },
+    {
+      "name": "Samsara",
+      "address": "715 Peachtree, CLovelly, Capetown ",
+      "phone": "+27 233 7100",
+      "website": "https://samsara.com",
+      "image": "https://images.ctfassets.net/bx9krvy0u3sx/2r27Vnqtd8g4nccDo4zzic/cf01b3bc7a48bef8f2f319b2dbad2cfc/Samsara_Vertical_Logo_Navy.jpg?w=2000&fm=webp&q=80",
+      "membershipLevel": 3
+    },
+    {
+      "name": "General Motors IT Innovation Center",
+      "address": "2980 Northwoods Parkway, Capetown",
+      "phone": "+27 840 0200",
+      "website": "https://gm.com",
+      "image": "https://www.gm.com/etc/designs/gbs/components/topbar/img/gm_script_logo_2021.png",
+      "membershipLevel": 1
+    },
+    {
+      "name": "Flexport",
+      "address": "1170 Peachtree St Capetown",
+      "phone": "+27 710 9570",
+      "website": "https://flexport.com",
+      "image": "https://attachments.insent.ai/flexport/logo-flexport-1714759975530?1714759975686",
+      "membershipLevel": 3
+    },
+    {
+      "name": "Tempus",
+      "address": "Peak Academy",
+      "phone": "+27 515 5000" ,
+      "website": "https://tempus.com",
+      "image": "https://www.tempus.com/wp-content/uploads/2022/09/Tempus-Logo_Black.png",
+      "membershipLevel": 2
+    }
+  ]
